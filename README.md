@@ -1,5 +1,5 @@
-<p align="center">
-  LIBFT
+<p>
+  <h1 align="center">LIBFT</h1>
 </p>
 
 Here you can find the very first project of 42's common core named LIBFT.
