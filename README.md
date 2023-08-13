@@ -28,6 +28,7 @@ I will now go throught some categories of functions related to specific C variab
        printf("Here is c1 : %c and here is c2 : %c\n", c1, c2);
    }
    ```
+   ![terminal output](https://github.com/Vlad-PLK/LIBFT/readme_images/char_demo.png)
    Both declaration are equivalent because 71 is the number corresponding to the G in the ascii table. It is crucial to understand the relation between char type and the ascii table because it teaches you how you should manipulate this type of variable easily.
    For instance, in this library you can find a bunch of simple functions that tells you if a character is a digit or in capital letter or even if it's in the ASCII.
 
