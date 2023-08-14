@@ -1,11 +1,44 @@
-SRCS 	= ft_isdigit.c ft_memset.c  ft_isprint.c ft_strtrim.c ft_strmapi.c\
-		  ft_strlcat.c ft_atoi.c ft_substr.c ft_strjoin.c ft_split.c ft_itoa.c\
-		  ft_strlcpy.c ft_tolower.c ft_bzero.c ft_strlen.c ft_putchar_fd.c ft_putendl_fd.c\
-		  ft_toupper.c ft_calloc.c ft_memchr.c ft_isalnum.c ft_putstr_fd.c ft_striteri.c\
-		  ft_memcmp.c ft_strncmp.c ft_isalpha.c ft_memcpy.c ft_strchr.c ft_putnbr_fd.c\
-		  ft_strnstr.c ft_isascii.c ft_memmove.c ft_strdup.c ft_strrchr.c
+SRCS 	=	char/ft_isalnum.c \
+			char/ft_isalpha.c \
+			char/ft_isdigit.c  \
+			char/ft_isascii.c  \
+			char/ft_isprint.c  \
+			char/ft_tolower.c  \
+			char/ft_toupper.c \
+			fds/ft_putchar_fd.c \
+			fds/ft_putendl_fd.c \
+			fds/ft_putnbr_fd.c \
+			fds/ft_putstr_fd.c \
+			int/ft_atoi.c \
+			int/ft_itoa.c \
+			strings/ft_split.c \
+			strings/ft_strchr.c \
+			strings/ft_strdup.c \
+			strings/ft_striteri.c \
+			strings/ft_strjoin.c \
+			strings/ft_strlcat.c \
+			strings/ft_strlcpy.c \
+			strings/ft_strlen.c \
+			strings/ft_strmapi.c \
+			strings/ft_strncmp.c \
+			strings/ft_strnstr.c \
+			strings/ft_strtrim.c \
+			strings/ft_substr.c \
+			ft_bzero.c \
+			ft_calloc.c \
+			ft_memchr.c \
+			ft_memcmp.c \
+			ft_memcpy.c \
+			ft_memmove.c \
+			ft_memset.c \
 
-B_SRC	= ft_lstnew_bonus.c ft_lstadd_front_bonus.c ft_lstsize_bonus.c ft_lstlast_bonus.c ft_lstadd_back_bonus.c ft_lstdelone_bonus.c ft_lstclear_bonus.c
+B_SRC	= 	lists/ft_lstnew_bonus.c \
+			lists/ft_lstadd_front_bonus.c \
+			lists/ft_lstsize_bonus.c \
+			lists/ft_lstlast_bonus.c \
+			lists/ft_lstadd_back_bonus.c \
+			lists/ft_lstdelone_bonus.c \
+			lists/ft_lstclear_bonus.c
 
 OBJS	= ${SRCS:.c=.o}
 
