@@ -41,6 +41,26 @@ B_SRC	= 	lists/ft_lstnew.c \
 			lists/ft_lstiter.c \
 			lists/ft_lstclear.c
 
+# > MESSAGES COLORS <<<<<<
+
+MSG_BCOLOR_FAILURE		:=	\001\e[1;31m\002
+MSG_BCOLOR_LOGGING		:=	\001\e[1;37m\002
+MSG_BCOLOR_PRIMARY		:=	\001\e[1;36m\002
+MSG_BCOLOR_REPORTS		:=	\001\e[1;35m\002
+MSG_BCOLOR_SUCCESS		:=	\001\e[1;32m\002
+MSG_BCOLOR_WARNING		:=	\001\e[1;33m\002
+MSG_NCOLOR_FAILURE		:=	\001\e[0;31m\002
+MSG_NCOLOR_LOGGING		:=	\001\e[0;37m\002
+MSG_NCOLOR_PRIMARY		:=	\001\e[0;36m\002
+MSG_NCOLOR_REPORTS		:=	\001\e[0;35m\002
+MSG_NCOLOR_SUCCESS		:=	\001\e[0;32m\002
+MSG_NCOLOR_WARNING		:=	\001\e[0;33m\002
+
+# > TERMINAL <<<<<<<<<<<<<
+
+TERM_CONTROL_CLEAR		:=	\001\e[1;1H\e[2J\002
+TERM_CONTROL_RESET		:=	\001\e[0m\002
+
 OBJS	= ${SRCS:.c=.o}
 
 B_OBJS	= ${B_SRC:.c=.o}
@@ -53,9 +73,13 @@ RM		= rm -f
 CFLAGS	= -Wall -Wextra -Werror
 
 .c.o:
+			@printf "$(MSG_BCOLOR_PRIMARY) COMPILING : "
+			@printf "$(TERM_CONTROL_RESET)"
 			${CC} ${CFLAGS} -g -c $< -o ${<:.c=.o}
 
 ${NAME}:	${OBJS}
+				@printf "${MSG_BCOLOR_SUCCESS} CREATING LIBRARY : "
+				@printf "$(TERM_CONTROL_RESET)"
 				ar src ${NAME} ${OBJS}
 
 bonus:		${OBJS} ${B_OBJS}
@@ -64,9 +88,13 @@ bonus:		${OBJS} ${B_OBJS}
 all:		${NAME}
 
 clean:	
+				@printf "$(MSG_BCOLOR_FAILURE) DELETING OBJECTS FILES : "
+				@printf "$(TERM_CONTROL_RESET)"
 				${RM} ${OBJS} ${B_OBJS}
 
 fclean:		clean
+				@printf "$(MSG_BCOLOR_WARNING) DELETING LIBRARY FILE : "
+				@printf "$(TERM_CONTROL_RESET)"
 				${RM} ${NAME}
 
 re:				fclean all
