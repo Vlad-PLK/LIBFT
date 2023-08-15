@@ -6,10 +6,11 @@
 /*   By: vpolojie <vpolojie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 13:42:03 by vpolojie          #+#    #+#             */
-/*   Updated: 2023/08/15 17:26:40 by vpolojie         ###   ########.fr       */
+/*   Updated: 2023/08/15 20:37:15 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
+#include "libft.h"
 
 int	ft_nbn(int n)
 {

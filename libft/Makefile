@@ -32,13 +32,14 @@ SRCS 	=	char/ft_isalnum.c \
 			ft_memmove.c \
 			ft_memset.c \
 
-B_SRC	= 	lists/ft_lstnew_bonus.c \
-			lists/ft_lstadd_front_bonus.c \
-			lists/ft_lstsize_bonus.c \
-			lists/ft_lstlast_bonus.c \
-			lists/ft_lstadd_back_bonus.c \
-			lists/ft_lstdelone_bonus.c \
-			lists/ft_lstclear_bonus.c
+B_SRC	= 	lists/ft_lstnew.c \
+			lists/ft_lstadd_front.c \
+			lists/ft_lstsize.c \
+			lists/ft_lstlast.c \
+			lists/ft_lstadd_back.c \
+			lists/ft_lstdelone.c \
+			lists/ft_lstiter.c \
+			lists/ft_lstclear.c
 
 OBJS	= ${SRCS:.c=.o}
 
