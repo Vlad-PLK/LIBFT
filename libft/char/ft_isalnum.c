@@ -3,13 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_isalnum.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpolojie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vpolojie <vpolojie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 12:04:48 by vpolojie          #+#    #+#             */
-/*   Updated: 2022/03/23 17:59:11 by vpolojie         ###   ########.fr       */
+/*   Updated: 2023/08/15 17:09:16 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <stdio.h>
+
+
+/*
+	ft_isalnum -> checks if c is a letter or a digit
+*/
 
 int	ft_isalpha(int c)
 {

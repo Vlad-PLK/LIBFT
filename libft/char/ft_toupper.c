@@ -3,12 +3,17 @@
 /*                                                        :::      ::::::::   */
 /*   ft_toupper.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpolojie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vpolojie <vpolojie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/21 11:18:03 by vpolojie          #+#    #+#             */
-/*   Updated: 2022/03/23 18:11:29 by vpolojie         ###   ########.fr       */
+/*   Updated: 2023/08/15 17:14:02 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+	ft_toupper -> if c is lowercase transform to a uppercase
+*/
+
 int	ft_toupper(int c)
 {
 	if (97 <= c && c <= 122)

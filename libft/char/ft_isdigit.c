@@ -9,6 +9,10 @@
 /*   Updated: 2022/03/23 18:00:45 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+	ft_isdigit -> checks if c is a digit (1 = true, 0 = false)
+*/
 int	ft_isdigit(int c)
 {
 	if (48 <= c && c <= 57)

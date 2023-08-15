@@ -9,6 +9,11 @@
 /*   Updated: 2022/03/25 10:10:51 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+/*
+	ft_isprint -> checks if c is a printable character
+*/
+
 int	ft_isprint(int c)
 {
 	if (c >= ' ' && c <= '~')
@@ -17,8 +22,3 @@ int	ft_isprint(int c)
 	}
 	return (0);
 }
-/*int	main()
-{
-	printf("%d\n", ft_isprint('~'));
-	printf("%d\n", isprint('~'));
-}*/

@@ -3,14 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpolojie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vpolojie <vpolojie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/03/26 13:37:07 by vpolojie          #+#    #+#             */
-/*   Updated: 2022/03/26 13:40:27 by vpolojie         ###   ########.fr       */
+/*   Updated: 2023/08/15 17:17:10 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
-#include <unistd.h>
+
 #include "libft.h"
+
+/*
+	write string 's' in the desired file descriptor and add a newline
+*/
 
 void	ft_putendl_fd(char *s, int fd)
 {
