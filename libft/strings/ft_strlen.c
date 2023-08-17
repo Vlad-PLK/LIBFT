@@ -3,13 +3,18 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: vpolojie <marvin@42.fr>                    +#+  +:+       +#+        */
+/*   By: vpolojie <vpolojie@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/02/03 12:58:35 by vpolojie          #+#    #+#             */
-/*   Updated: 2022/03/23 17:47:25 by vpolojie         ###   ########.fr       */
+/*   Updated: 2023/08/16 08:07:01 by vpolojie         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
 #include <unistd.h>
+
+/*
+	ft_strlen -> returns the number of characters in str
+*/
 
 size_t	ft_strlen(const char *str)
 {
