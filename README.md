@@ -47,7 +47,7 @@ int	ft_isdigit(int c)
 }
 ```
 \
-:two: Character string type
+:two: <ins>**Character string type**</ins>
 \
 \
 Now, we are moving to char strings. When it comes to character strings you need to understand that in C a string is an array of characters composed of all of it characters and the null terminating character : '\0'. It is placed at the last index of the array.
@@ -111,8 +111,7 @@ char	*ft_strjoin(char const *s1, char const *s2)
 }
 ```
 \
-\
-:three: Integer
+:three: <ins>**Integer**</ins>
 \
 \
 In this part, I will only talk about two functions atoi and itoa. As I explained earlier, a char is equivalent to an int in the ASCII table.
@@ -123,6 +122,73 @@ So : '5' - '0' = 53 - 48 = 5
 That's it, now we have converted a char to an int.
 For an int to ascii convertion I let you do your own researches, the most important fact here is to learn correctly how a putnbr works in C.
 \
-:four: Linked Lists
+\
+:four: <ins>**Linked Lists**</ins>
+\
+\
+In the subject of this project, linked lists are part of the bonus section but this data structure is so important for all incoming projects and so usefull in general that is fells like an unskippable part.
+Let's define what is in fact a linked list :
+A linked list is a linear data structure, made of a chain of nodes in which each node contains a value and a pointer to the next node in the chain.
+Basically all nodes are connected one after the other and the last one points to NULL to indicate the end of the chain. The best advantage of a linked list compared to an array is that the size of the linked list is not fixed and you can add a node at any moment. It becomes very usefull when dealing with problems where you have an unknown quantity of variables or when it can change really fast.
+\
+Here is an example of a structure for a linked list : 
+```C
+typedef struct s_list
+{
+	void			*content;
+	struct s_list	*next;
+}					t_list;
+```
+We have here a 'void' pointer so we can cast any type of variable that we want to for the content of the nodes. Of course the 'next' s_list pointer is here to link all nodes together and as I write it upwards the last node points to NULL.
+\
+Here are some basic functions to manipulate linked lists such as ft_lstnew to create a new node, or ft_lstsize to calculate the size of the list : 
+```C
+#include "libft.h"
+
+/*
+	ft_lstnew -> allocate a new node, set the content and point to NULL
+*/
+
+t_list	*ft_lstnew(void *content)
+{
+	t_list	*lst;
+
+	lst = malloc(sizeof(t_list));
+	if (!lst)
+		return (NULL);
+	else
+	{
+		lst->content = content;
+		lst->next = NULL;
+	}
+	return (lst);
+}
+```
+
+```C
+#include "libft.h"
+
+/*
+	ft_lstsize -> if lst exists, returns the size of it
+*/
+
+int	ft_lstsize(t_list *lst)
+{
+	int	i;
+
+	i = 0;
+	if (!lst)
+		return (0);
+	else
+	{
+		while (lst)
+		{
+			lst = lst->next;
+			i++;
+		}
+	}
+	return (i);
+}
+```
 
 
